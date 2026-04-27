@@ -1,14 +1,14 @@
 package org.example
 class Complejo { 
-    private var real: Int=0 
+    private var reales: Int=0 
     private var imag: Int=0
     override fun toString(): String{
-        return "(${real}, ${imag})"
+        return "(${reales}, ${imag})"
     }
     
 
-    fun inicializar(real: Int, imag: Int){
-        this.real=real
+    fun inicializar(reales: Int, imag: Int){
+        this.reales=reales
         this.imag=imag
     }
 }
@@ -19,7 +19,7 @@ fun main() {
     c1.inicializar(1,2)
     c2.inicializar(3,4)
     var c3: Complejo
-    c3 = Complejo()
+    c3=Complejo()
    // c3=c1+c2
 
     println(c3.toString())
